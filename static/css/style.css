@@ -1,0 +1,143 @@
+.topleftt{
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 24px;
+background-color: #f1f1f1;
+color: black;
+border-radius: 50%;
+}
+
+/* navigation bar */
+
+.navbar{
+overflow: hidden;
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+width: 100%;
+justify-content:center;
+padding: 20px;
+color: whitesmoke;
+background-color: #fc036b;
+z-index: 100;
+}
+
+.navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.navbar a:hover {
+background: #ddd;
+color: #fc036b;
+}
+.active{
+color: aliceblue;
+font-weight: bold;
+text-decoration: none;
+}
+
+.navbar .icon{
+display: none;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+li {
+float: right;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.toggle_btn{
+position: absolute;
+top: 8px;
+right: 16px;
+font-size: 24px;
+color: black;
+}
+
+.navbar .toggle_btn{
+color: #fff;
+font-size: 1.7rem;
+cursor: pointer;
+display: none;
+}
+.topleft{
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 24px;
+}
+.dropdown_menu{
+display: none;
+position: absolute;
+right: 0;
+top: 60px;
+width: 300px;
+height: 400px;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(15px);
+border-radius: 10px;
+overflow: hidden;
+transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+z-index: 2;
+}
+.dropdown_menu li{
+padding: 0.7rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.dropdown_menu.open{
+height: 400px;
+position: fixed;
+}
+@media(max-width: 992px){
+.dropdown_menu{
+right: 2rem;
+width: 300px;
+height: 400px;
+}
+.dropdown_menu.open {
+  display: block; 
+  height: auto; 
+}
+.navbar .links {
+  display: none;
+}
+
+.navbar .toggle_btn {
+  display: block;
+}
+.toggle_btn i {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+}
+.topright{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 24px;
+  }
