@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+	integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">    
+  <link rel="stylesheet" href="./static/css/foter.css">    
+  <link rel="stylesheet" href="./static/css/style.css">
+  <link rel="icon" type="image/x-icon" href="./static/img/SPACE-Logo.png">    
+</head>
+<style>
+* {
+margin: 0; 
+padding: 0;
+box-sizing: border-box;
+}
+body {
+background-image: url('./static/img/bg-ab.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;
+min-height: 100vh;
+width: 100vw;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.about-section {
+padding: 40px;
+text-align: center;
+font-size: 24px;
+color: whitesmoke;
+}
+a{
+color: #212529;
+text-decoration: none;
+}
+a:hover{
+color: #0cb8da;
+}
+</style>
+<body>
+
+
+
+	  {% extends "layout.html" %}
+	  {% block body %}
+
+	  <div class="about-section">
+		<br>
+		<br>
+		<h1>About</h1>
+		<br>
+		<h2><i>👋 Welcome to The Space Blog</i></h2><br>
+		<h2><i>Our Mission:</i></h2><br>
+		<h3><i>At The Space Blog, our mission is to give proper information about Space.<br>
+			 We believe that the information we provide will increase your knowledge.<br>
+		</i></h3><br>
+		<h2><i>Join Us on Our Journey:</i></h2><br>
+		<h3><i>"Where we have come from, where we going?"</i></h3>
+		<h3><i>
+		  <br>To ponder these questions, we invite you to:<br>
+		  Explore The Space, Read The Articles,<br>
+		  and Subscribe To Our Website.</i> 
+		</h3>
+   		<h3><br>
+			<i>By reading those articles if you want to give<br> 
+			any feedback or suggestion please contact us.<br> 
+			<br>We will definetly take your suggestion<br> and make 
+			thing suitable for audience.</i><br>
+
+			<br><h2><i><b>Contact Us:</b></i></h2><br>
+			<h3><i>Got questions or feedback? We'd love to hear from you.<br>
+				 Reach out to us at youremail@gmail.com or<br>
+				 visit our Contact Page for more ways to connect.
+			</i></h3>
+      <br>
+		</h3> 
+	  </div>
+
+
+
+	  {% endblock %}
+
+
+	
+</body>
+</html>
