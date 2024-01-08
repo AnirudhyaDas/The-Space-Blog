@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+	integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./static/css/foter.css">    
+  <link rel="stylesheet" href="./static/css/style.css">    
+  <link rel="icon" type="image/x-icon" href="./static/img/SPACE-Logo.png">     
+</head>
+<style>
+* {
+margin: 0; 
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+body{
+background: linear-gradient(90deg, #3c93d6, #dfe956);
+}
+
+.container{
+/* width: 100%; */
+margin-top: 100px;
+text-align: center;
+max-width: 100%;
+padding: 20px;
+box-sizing: border-box;
+}
+h1{
+color: #111;
+font-weight: bold;
+}
+
+h2{
+font-weight: normal;
+font-size: 35px;
+position: relative;
+margin: 80px;
+font-size: 28px; /* Adjust font size for smaller screens */
+margin: 40px 0;
+}
+h3{
+height: 100%;
+background-color: rgb(228, 228, 228);
+line-height: 60px;
+padding: 0 50px;
+color: green;
+}
+.top-content{
+background-color: rgb(243, 243, 243);
+width: 90%;
+margin: 0 auto 20px auto;
+height: 60px;
+display: flex;
+align-items: center;
+border-radius: 5px;
+box-shadow: 3px 3px 5px lightgray;
+font-size: 14px;
+}
+label{
+margin: 0 10px; /* Adjust margin for smaller screens */
+font-size: 14px;
+}
+label:hover{
+color: black;
+}
+.photo-gallery{
+width: 100%;
+/* margin: auto; */
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 20px;
+justify-items: center; /* Center-align items in the grid */
+align-items: stretch;
+}
+.pic{
+border-radius: 10px;
+box-shadow: 3px 3px 5px lightgray;
+cursor: pointer;
+height: auto;
+}
+.pic img{
+width: 100%;
+height: 100%;
+border-radius: 10px;
+transition: .5s;
+}
+h1{
+font-weight: bold;
+color: white;
+}
+@media (max-width: 768px) {
+
+.container {
+padding: 10px;
+}
+
+/* Adjust font size and margins for smaller screens */
+h2 {
+font-size: 24px;
+margin: 20px 0;
+}
+
+.top-content {
+font-size: 12px;
+}
+
+label {
+margin: 0 5px;
+font-size: 12px;
+}
+
+/* Adjust grid columns for smaller screens */
+.photo-gallery {
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+grid-gap: 10px;
+}
+}
+
+
+/* CSS for the modal */
+.modal {
+display: none;
+position: fixed;
+z-index: 1000;
+padding-top: 50px;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+display: block;
+margin: 0 auto;
+max-width: 90%;
+max-height: 90%;
+}
+
+.close {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 30px;
+font-weight: bold;
+color: white;
+cursor: pointer;
+}
+
+a{
+color: #212529;
+text-decoration: none;
+}
+a:hover{
+color: #0cb8da;
+}
+
+</style>
+<body>
+
+    {% extends "layout.html" %}
+    {% block body %}
+
+
+	  <div class="container">
+        <div class="previous round">
+        </div>
+        <br>
+        <h2 style="color: green" ><b>PHOTO GALLERY</b></h2>
+        <div class="top-content">
+            <h3>PHOTO GALLERY</h3>
+            <label >All Photos</label>
+        </div>
+
+        <div class="photo-gallery">
+
+            {% for item in gallery %}
+                <div class="pic space">
+                    <img src="{{ url_for('static', filename='img/' + item.img) }}" alt="{{ item.img }}">
+                </div>
+            {% endfor %}
+
+			<div id="imageModal" class="modal">
+				<span class="close" id="closeModal">&times;</span>
+				<img class="modal-content" id="modalImage">
+			  </div>
+        
+        </div>
+    </div>
+
+
+	  {% endblock %}
+
+
+</body>
+</html>
