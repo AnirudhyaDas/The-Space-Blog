@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+	integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"> 
+  <link rel="icon" type="image/x-icon" href="./static/img/SPACE-Logo.png">      
+</head>
+<style>
+body {font-family:'Times New Roman', Times, serif;}
+* {
+    margin: 0; 
+padding: 0;
+    box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  font-size: 25px;
+}
+h2{text-align: center; margin-top: 250px; font-size: 40px;}
+
+h1{margin-bottom: 50px}
+
+h3{text-align: center; margin-bottom: 150px; font-size: 20px;}
+.ctn{
+padding: 8px 15px;
+background: #fc036b;
+border-radius: 30px;
+color: whitesmoke;
+}
+.site-header { 
+border-bottom: 1px solid #ccc;
+padding: .5em 1em;
+position: relative;
+margin-bottom: 3rem;
+padding-bottom: 8rem;
+background: no-repeat center center;
+background-color: #6c757d;
+background-size: cover;
+background-attachment: scroll;
+}
+
+.site-header::after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+
+.btn {
+  background-color: DodgerBlue; 
+  border: none;
+  color: white;
+  padding: 12px 16px; 
+  font-size: 13px; 
+  cursor: pointer; 
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.text-center{
+  text-align: center;
+  font-weight: bold;
+  color: #fc036b;
+  font-size: x-large;
+}
+
+
+</style>
+<body>
+    <header class="site-header" style="background-image: url('./static/img/keyboard-bg.jpg')">
+        <h2  style="color: whitesmoke;"><i>ADD YOUR IMAGE HERE...</i><br></h2>
+        <p></p> 
+        <br>
+        <br>
+        <br>
+        <h3><a class="ctn">SCROLL DOWN TO ADD</a></h3>
+    </header>
+
+    <div class="text-center">
+      <h7>BASIC ACTION</h7><br>
+      <br>
+      <a href="login"><button class="btn">DASHBOARD</button></a>
+      <a href="logout"><button class="btn">LOGOUT</button></a>
+  </div>  
+  <br>
+
+  <hr>
+	  
+    
+  <div class="container">
+    <form name="sentMessage" id="createpost" action="image" method="post">
+
+      <label>Image File</label>
+      <br>
+      <br>
+      <form action="/uploader" method="post" enctype="multipart/form-data">
+        <input type="file" name="img">
+
+      <br>
+      <br>
+      <button class="btn" id="submitButton" type="submit">Submit</button>
+    </form>
+    </form>
+  </div>
+  
+
+
+	<hr>
+
+    <div class="text-center text-muted fst-italic" style="color: black; font-size: small;">Copyright &copy; The Space Blog</div>
+
+
+</body>
+</html>
