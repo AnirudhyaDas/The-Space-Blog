@@ -1,0 +1,17 @@
+{
+  "parameter":
+  {
+    "local_server": "True",
+    "local_uri": "mysql+pymysql://root:@localhost/thespaceblog",
+    "prod_uri": "mysql+pymysql://root:@localhost/thespaceblog",
+    "fb_url": "https://facebook.com/anirudhadazs",
+    "tw_url": "https://twitter.com/AnirudhyaDas12",
+    "in_url": "https://www.instagram.com/anirudhya_de_arya/",
+    "gh_url": "https://github.com/AnirudhyaDas",
+    "gmail-user": "cjtxtblacksrox@gmail.com",
+    "gmail-password": "lqeunwgiexlvvojz",
+    "no_of_posts": 5,
+    "admin-email": "anirudhadasdas2004@gmail.com",
+    "admin_password": "005522@Hello"
+  }
+}
