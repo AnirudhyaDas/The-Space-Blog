@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>post</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+	integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="icon" type="image/x-icon" href="./static/img/SPACE-Logo.png">    
+</head>
+<style>
+  * {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+  }
+  body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: Dosis;
+  }
+  
+  
+  .about-section {
+  padding: 40px;
+  text-align: center;
+  font-size: 24px;
+  color: whitesmoke;
+  }
+  a{
+  color: #212529;
+  text-decoration: none;
+  }
+  a:hover{
+  color: #0cb8da;
+  }
+
+  .ctn{
+padding: 8px 15px;
+background: #fc036b;
+border-radius: 30px;
+color: whitesmoke;
+}
+.site-header::after {
+content: "";
+display: table;
+clear: both;
+}
+.site-header { 
+border-bottom: 1px solid #ccc;
+padding: .5em 1em;
+position: relative;
+margin-bottom: 3rem;
+padding-bottom: 8rem;
+background: no-repeat center center;
+background-color: #6c757d;
+background-size: cover;
+background-attachment: scroll;
+}
+h2{text-align: center; margin-top: 150px; font-size: 40px;}
+
+h3{text-align: center; margin-bottom: 50px; font-size: 20px;}
+
+h6{text-align: center; color: aliceblue; font-size: 20px;}
+
+.post-preview > a > .post-title {
+font-size: 1.875rem;
+margin-top: 1.875rem;
+margin-bottom: 0.625rem;
+}
+@media (min-width: 992px) {
+.post-preview > a > .post-title {
+font-size: 2.25rem;
+}
+}
+.content {
+  max-width: 800px;
+  margin: auto;
+  font-size: 20px;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+/* navigation bar */
+.topleftt{
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 24px;
+background-color: #f1f1f1;
+color: black;
+border-radius: 50%;
+}
+
+.navbar{
+overflow:hidden;
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+width: 100%;
+justify-content:center;
+padding: 20px;
+color: whitesmoke;
+background-color: #fc036b;
+z-index: 100;
+}
+
+.navbar a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+.navbar a:hover {
+background: #ddd;
+color: #fc036b;
+}
+.active{
+color: aliceblue;
+font-weight: bold;
+text-decoration: none;
+}
+
+.navbar .icon{
+display: none;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+li {
+float: right;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.toggle_btn{
+position: absolute;
+top: 8px;
+right: 16px;
+font-size: 24px;
+color: black;
+}
+
+.navbar .toggle_btn{
+color: #fff;
+font-size: 1.7rem;
+cursor: pointer;
+display: none;
+}
+.topleft{
+position: absolute;
+top: 8px;
+left: 16px;
+font-size: 24px;
+}
+.dropdown_menu{
+display: none;
+position: absolute;
+right: 0;
+top: 60px;
+width: 300px;
+height: 400px;
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur(15px);
+border-radius: 10px;
+overflow: hidden;
+transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+z-index: 2;
+}
+.dropdown_menu li{
+padding: 0.7rem;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.dropdown_menu.open{
+height: 400px;
+}
+@media(max-width: 992px){
+.dropdown_menu{
+right: 2rem;
+width: 300px;
+height: 400px;
+}
+.dropdown_menu.open {
+  display: block; 
+  height: auto; 
+}
+.navbar .links {
+  display: none;
+}
+
+.navbar .toggle_btn {
+  display: block;
+}
+.toggle_btn i {
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+}
+.topright{
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 24px;
+  }
+
+
+
+
+
+
+
+
+
+
+/* footer */
+  .foot {
+  margin-top: 150px;
+  width: 100%;
+  padding: 80px 0%;
+  background: #fc036b;
+  color: #efefef;
+  display: flex;
+  height: 25%;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  align-items: flex-start;
+  bottom: 0;
+  }
+  
+  .foot .col-1, .foot .col-2, .foot .col-3 {
+  flex: 1; 
+  padding: 10px;
+  text-align: center;
+  margin: 10px;
+  }
+  
+  .foot a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+  }
+  form button{
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 30px;
+  padding: 5px 20px;
+  cursor: pointer;
+  }
+  .col-md-4{
+    color: white;
+    background-color: #830338;
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 768px) {
+  .foot {
+  flex-direction: column; 
+  text-align: flex;
+  padding: 10px;
+  }
+  .foot .col-1, .foot .col-2, .foot .col-3 {
+  flex: none;
+  padding: 0;
+  width: 100%; 
+  }
+  form button {
+  margin-top: 10px; 
+  }
+  }
+  </style>
+<body>
+  {% set fname = 'img/' + post.img_file %}
+  <header class="site-header" style="background-image: url('{{ url_for('static', filename=fname) }}')">
+    <h2 class="heading" style="color: whitesmoke;"><i>{{post.title}}</i></h2>
+    <p></p>
+
+    <br>
+    <h6 class="sub-heading"><i>{{post.subtitle}}</i></h6>
+
+    <br>
+    <br>
+    <h3><a class="ctn">SCROLL DOWN TO Read</a></h3>
+</header>
+{% extends "layout.html" %}
+{% block body %}
+
+  <article class="mb-4">
+    <div class="content">
+      <div class="post-preview">
+      <h4 class="post-title">
+        <p>{{post.content}}</p>  
+      </div>
+        <hr>
+  
+      </h4>    
+            </div>
+
+            <br>
+        
+        
+            {% endblock %}
+
+</article>
+
+
+
+</body>
+</html>
