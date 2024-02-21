@@ -1,3 +1,3 @@
-# The-Space-Blog
+# 🚀 About Me
 
-This is a flask based blog. If you have any questions or suggestions, feel free to open an issue or pull request :)
+Hey there! 👋 I'm Anirudhya Das, a passionate and curious student exploring the realms of code and creativity. 🌈
