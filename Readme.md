@@ -16,3 +16,7 @@ The Blog Website project aims to create a dynamic and user-friendly platform for
 # PURPOSE
 
 The primary purpose of this website is to serve as an educational resource, offering a wealth of information about space-related topics. It aims to make the mysteries of the universe accessible and understandable, nurturing curiosity and appreciation for the cosmos.
+
+
+# Installation
+
