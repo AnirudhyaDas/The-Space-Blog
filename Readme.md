@@ -20,4 +20,8 @@ The primary purpose of this website is to serve as an educational resource, offe
 
 # Installation
 
-Flask, Jason, Math, OS
+Flask, Jason, Math, OS, MySQL
+
+# SCOPE
+
+The project is made on PyCharm. This application is an easy to use application as the user need to run the complete program and set the database by their own.
