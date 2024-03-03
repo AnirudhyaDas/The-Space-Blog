@@ -20,7 +20,7 @@ The primary purpose of this website is to serve as an educational resource, offe
 
 # Installation
 
-Flask, Jason, Math, OS, MySQL
+Flask, Jason
 
 # SCOPE
 
@@ -29,4 +29,6 @@ The project is made on PyCharm. This application is an easy to use application a
 # OVERVIEW
 
 This document will give you an easy walk over through the application and act as a guide with easy steps to use and maintain the application. Detailed overview of each feature and design is covered below in the System Overview. This application does not involve any database, but this is a future aspect of this application in case there is a need to store the labelled data, the flow of application is explained with data flow in use case diagram under System Architecture section. In the end, a visual look and feel of this application with the flow of application is shown. 
+
+# SYSTEM OVERVIEW
 
