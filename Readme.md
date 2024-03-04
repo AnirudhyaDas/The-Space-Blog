@@ -20,7 +20,7 @@ The primary purpose of this website is to serve as an educational resource, offe
 
 # Installation
 
-Flask, Jason
+Flask
 
 # SCOPE
 
