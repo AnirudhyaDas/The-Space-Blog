@@ -33,3 +33,5 @@ This document will give you an easy walk over through the application and act as
 # SYSTEM OVERVIEW
 
 The Blog Website is a dynamic online platform designed to facilitate the creation, publication, and consumption of blog content. This system overview provides a high-level understanding of the key components and functionalities that contribute to the seamless operation of the blog website.
+
+# Libraries 
