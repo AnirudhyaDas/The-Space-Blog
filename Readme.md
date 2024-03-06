@@ -34,4 +34,6 @@ This document will give you an easy walk over through the application and act as
 
 The Blog Website is a dynamic online platform designed to facilitate the creation, publication, and consumption of blog content. This system overview provides a high-level understanding of the key components and functionalities that contribute to the seamless operation of the blog website.
 
-# Importing Libraries:
+# Importing Libraries
+
+First thing we are going to do is to import the important libraries. Since we are working on web application, we have import flask , math, os. 
