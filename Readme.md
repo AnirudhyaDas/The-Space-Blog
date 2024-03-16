@@ -37,3 +37,7 @@ The Blog Website is a dynamic online platform designed to facilitate the creatio
 # IMPORTING LIBRARIES
 
 First thing we are going to do is to import the important libraries. Since we are working on web application, we have import flask  to create instances of web application, we import libraries such as SQLAlchemy, datetime, Mail, math, os, secure filename, jason. 
+
+# FRONTEND
+
+A typical blog website's frontend is made up of numerous components that work together to provide the user interface and functionality. Here's a rundown of some of the most typical components present in the frontend of a blog website like Header, Home/Featured Section, Single Post Page, Footer, and Responsive Design.
