@@ -47,3 +47,5 @@ A typical blog website's frontend is made up of numerous components that work to
 The backend of a blog website consists of various components that handle the behind-the-scenes functionality and management of the website. Here's an overview of some common components found in the backend: Content Management System (CMS), Database Management System, and Backup and Maintenance.
 
 These components work together to manage and ensure the smooth operation of the blog website from a technical standpoint. The specific backend components and their configurations can vary based on the chosen CMS, plugins, and technical requirements of the website.
+
+# DATABASE
